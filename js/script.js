@@ -39,3 +39,10 @@ function getScreenSize(background){
 
     return w * h;
 }
+
+function getComponents(){
+    $(function() {
+        $('#navbar').load('/assets/components/navbar.html');
+        $('#footer').load('/assets/components/footer.html')
+    });
+}
