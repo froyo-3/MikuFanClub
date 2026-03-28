@@ -3,10 +3,10 @@ function addStars(){
     const background = document.querySelector(".stars");
 
     // check screen size to fingd number of stars to put in
-    var screenSize = getScreenSize();
+    var screenSize = getScreenSize(background);
 
     // make stars prob check screen size for number of stars
-    for (let i = 0; i<screenSize/4000; i++){
+    for (let i = 0; i<screenSize*0.0001; i++){
         // create star
         const star = document.createElement("div");
         star.className = "star";
@@ -33,9 +33,9 @@ function addStars(){
    
 }
 
-function getScreenSize(){
-    var w = window.innerWidth;
-    var h = window.innerHeight;
+function getScreenSize(background){
+    var w = background.offsetWidth;
+    var h = background.offsetHeight;
 
     return w * h;
 }
