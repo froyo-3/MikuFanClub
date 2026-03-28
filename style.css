@@ -1,0 +1,37 @@
+/* google fonts css stuff */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* custom stuff */
+
+.root{
+    --text: #030f15;
+    --background: #D5EFF2;
+    --primary: #66D9D9;
+    --secondary: #fb98c6;
+    --accent: #5db6ca;
+}
+
+body {
+    margin: 0;
+    background: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+
+}
+
+.star {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url("star.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
