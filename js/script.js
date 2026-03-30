@@ -12,7 +12,7 @@ function addStars(){
         star.className = "star";
 
         // add an offset vertically
-        star.style.top = Math.random() * 100 + "%";
+        star.style.top = Math.random() * 85 + "%";
 
         // add offset horizontally
         star.style.left = Math.random() * 100 + "%";

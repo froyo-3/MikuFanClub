@@ -9,20 +9,26 @@
 
 /* custom stuff */
 
-.root{
+:root{
     --text: #030f15;
-    --background: #D5EFF2;
+    --background: #d5eff2;
+    --content-background:#eefdff;
     --primary: #66D9D9;
     --secondary: #fb98c6;
     --accent: #5db6ca;
 }
 
+
 body {
     margin: 0;
-    background: rgb(255, 255, 255);
+    background: var(--background);
     position: relative;
-    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
 
+.bg-light:not(img){
+    background-color: var(--content-background) !important;
 }
 
 .star {
@@ -33,8 +39,21 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -1;
+    filter: brightness(0) saturate(100%) invert(63%) sepia(32%) saturate(586%) hue-rotate(144deg) brightness(98%) contrast(87%);
 }
 
 .nav-link{
     color:var(--text);
+}
+
+.page-content{
+    min-height: 200vh;
+    width: 90%;
+    margin: 0 5%;
+}
+
+.banner{
+    object-fit: cover;
+    width: 100%;
+    height: 90vh;
 }
