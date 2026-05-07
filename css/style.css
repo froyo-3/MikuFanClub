@@ -12,7 +12,7 @@
 :root{
     --text: #030f15;
     --background: #d5eff2;
-    --content-background:#eefdff;
+    --content-background:#e9fdff;
     --primary: #66D9D9;
     --secondary: #fb98c6;
     --accent: #5db6ca;
@@ -56,4 +56,16 @@ body {
     object-fit: cover;
     width: 100%;
     height: 90vh;
+}
+
+.about-image{
+    max-width: 70% !important;
+    margin: auto;
+}
+
+@media only screen and (min-width: 1000px) {
+    .about-image{
+        max-width: 100% !important;
+        margin: 0;
+    }
 }
