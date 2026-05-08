@@ -12,8 +12,8 @@
 :root{
     --text: #030f15;
     --background: #d5eff2;
-    --content-background:#e9fdff;
-    --primary: #66D9D9;
+    --content-background:#e2fcff;
+    --primary: #60dbdb;
     --secondary: #fb98c6;
     --accent: #5db6ca;
 }
@@ -35,7 +35,7 @@ body {
     position: absolute;
     width: 50px;
     height: 50px;
-    background-image: url("../assets/stars/star.png");
+    background-image: url("../assets/stars/star2.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -1;

@@ -11,13 +11,16 @@ function addStars(){
         const star = document.createElement("div");
         star.className = "star";
 
+        let starType = Math.floor(Math.random()*3) + 1;
+        star.style.backgroundImage = "url(\'../assets/stars/star"+starType+".png\')"
+
         // add an offset vertically
         star.style.top = Math.random() * 85 + "%";
 
         // add offset horizontally
         star.style.left = Math.random() * 100 + "%";
 
-        var size = Math.random() * 100 + 30 + "px";
+        var size = Math.random() * 50 + 30 + "px";
         // add random size
         star.style.height = size;
         star.style.width = size;
