@@ -78,10 +78,14 @@ body {
     margin: auto;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 992px) {
     .about-image{
         max-width: 100% !important;
         margin: 0;
+    }
+
+    .order-summary{
+        border: 1px solid #dee2e6 !important;
     }
 }
 
@@ -134,4 +138,8 @@ body {
     font-size: large;
     text-align: center;
     line-height: 2;
+}
+
+.cart-item img{
+    max-height: 150px;
 }

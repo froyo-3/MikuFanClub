@@ -55,84 +55,96 @@ const products = [
     
     title: "Hatsune Miku Powder",
     img: "assets/products/powderM.png",
-    desc: "Supports your everyday bulking needs!"
+    desc: "Supports your everyday bulking needs!",
+    price: "£12"
     
     },
     {
     
     title: "Kasane Teto Powder",
     img: "assets/products/powderT.png",
-    desc: "Supports your everyday bulking needs!"
+    desc: "Supports your everyday bulking needs!",
+    price: "£12"
     
     },
     {
     
     title: "Akita Neru Powder",
     img: "assets/products/powderN.png",
-    desc: "Supports your everyday bulking needs!"
+    desc: "Supports your everyday bulking needs!",
+    price: "£12"
     
     },
     {
     
     title: "Hatsune Miku Shaker Bottle",
     img: "assets/products/cupM.png",
-    desc: "Supports your everyday bulking needs!"
+    desc: "Supports your everyday bulking needs!",
+    price: "£8"
     
     },
     {
     
     title: "Kasane Teto Shaker Bottle",
     img: "assets/products/cupT.png",
-    desc: "Supports your everyday bulking needs!"
+    desc: "Supports your everyday bulking needs!",
+    price: "£8"
     
     },
     {
     
     title: "Akita Neru Shaker Bottle",
     img: "assets/products/cupN.png",
-    desc: "Supports your everyday bulking needs!"
+    desc: "Supports your everyday bulking needs!",
+    price: "£8"
     
     },
     {
     
     title: "Hatsune Miku T-Shirt",
     img: "assets/products/teeM.png",
-    desc: "Fully plastic - single use. !DO NOT GET WET!"
+    desc: "Fully plastic - single use. !DO NOT GET WET!",
+    price: "£16"
     
     },
     {
     
     title: "Kasane Teto T-Shirt",
     img: "assets/products/teeT.png",
-    desc: "Fully plastic - single use. !DO NOT GET WET!"
+    desc: "Fully plastic - single use. !DO NOT GET WET!",
+    price: "£16"
     
     },
     {
     
     title: "Akita Neru T-Shirt",
     img: "assets/products/teeN.png",
-    desc: "Fully plastic - single use. !DO NOT GET WET!"
+    desc: "Fully plastic - single use. !DO NOT GET WET!",
+    price: "£16"
     
     },
     {
     
     title: "Hatsune Miku Keychain",
     img: "assets/products/keyM.png",
-    desc: "So everyone knows how awesome sauce you truly are!"
+    desc: "So everyone knows how awesome sauce you truly are!",
+    price: "£4"
     
     },
     {
     
     title: "Kasane Teto Keychain",
     img: "assets/products/keyT.png",
-    desc: "So everyone knows how awesome sauce you truly are!"
+    desc: "So everyone knows how awesome sauce you truly are!",
+    price: "£4"
     
     },
     {
     
     title: "Akita Neru Keychain",
     img: "assets/products/keyN.png",
-    desc: "So everyone knows how awesome sauce you truly are!"
+    desc: "So everyone knows how awesome sauce you truly are!",
+    price: "£4"
     
     },
     
@@ -147,7 +159,10 @@ products.forEach(product =>{
       <div class="card-body">
         <h5 class="card-title">${product.title}</h5>
         <p class="card-text">${product.desc}</p>
-        <a href="#" class="btn btn-primary border-0">Add to Basket</a>
+        <div class="d-flex justify-content-between">
+            <p class="card-text font-weight-bold">${product.price}</p>
+            <a href="#" class="btn btn-primary border-0">Add to Basket</a>
+        </div>
       </div>
     </div>
     `;
