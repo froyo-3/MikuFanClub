@@ -18,6 +18,9 @@
     --accent: #5db6ca;
 }
 
+html {
+    overflow-x: hidden;
+}
 
 body {
     margin: 0;
@@ -61,11 +64,13 @@ body {
 .carousel{
     width: 90%;
     max-height: 80vh;
+    min-height: 50vh;
 }
 
 .carousel-item img{
     object-fit: cover;
     max-height: 80vh;
+    min-height: 50vh;
 }
 
 .about-image{
@@ -118,11 +123,11 @@ body {
 
 .pretty-button:hover{
     background-color: #ff59a6;
+    color: white;
 }
 
 .home-text h1{
     text-align: center;
-    line-height: 3;
 }
 
 .home-text p{
